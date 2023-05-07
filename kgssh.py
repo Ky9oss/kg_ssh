@@ -240,6 +240,7 @@ if __name__ == "__main__":
                     break
                 case '5':
                     ssh_client_fabric(host=host, port=port, username=username, password=password)
+                    break
                 case '0':
                     print("Bye~")
                     sys.exit()
