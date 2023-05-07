@@ -1,6 +1,10 @@
 # 介绍
 ## 主要工具：kgssh
 集成了ssh客户端、ssh服务器、ssh反向客户端、ssh反向服务器。且对于ssh反向客户端，会持续发出连接请求，所以只要运行该程序，可以持续反弹shell，稳定性较好   
+### 使用方式
+- `pipenv sync`  
+- `pipenv shell`  
+- `pipenv run python kgssh.py [host_ip] [port] [username] [password]`  
 ## 其他工具
 三个简单的工具：  
 - keepalive\_client.py: 作为搭建在渗透目标上的ssh客户端，长时间连接目标的服务器，并反弹自身的shell给服务器  
