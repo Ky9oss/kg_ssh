@@ -24,7 +24,7 @@ current_module_dirname = os.path.dirname(os.path.realpath(__file__))
 
 if __name__ == '__main__':
 
-    server_ip = '127.0.0.1'
+    server_ip = '10.128.136.7'
     server_port = 2222
     user = 'kygoss'
     passwd = '123456'

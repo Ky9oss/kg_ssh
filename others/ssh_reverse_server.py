@@ -14,7 +14,7 @@ current_module_dirname = os.path.dirname(os.path.realpath(__file__))
 #使用ssh-keygen -m PEM -t rsa创建公私钥，-m PEM制定密钥格式为PEM，-t rsa制定要创建的密钥类型为rsa
 HOSTKEY = paramiko.RSAKey(filename=os.path.join(current_module_dirname, 'kgkey'))
 
-IP = '127.0.0.1'
+IP = '10.128.248.20'
 PORT = 2222
 
 
@@ -31,7 +31,7 @@ class Server(paramiko.ServerInterface):
         print('return paramiko.OPEN_FAILED_ADMINISTRATIVELY_PROHIBITED')
         return paramiko.OPEN_FAILED_ADMINISTRATIVELY_PROHIBITED
     def check_auth_password(self, username: str, password: str) -> int:
-        if (username == 'kygoss') and (password == '123456'):
+        if (username == 'icarus') and (password == 'icarus'):
             return paramiko.AUTH_SUCCESSFUL
 
 
